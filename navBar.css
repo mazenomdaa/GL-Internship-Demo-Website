@@ -1,0 +1,107 @@
+:root {
+    --pageColor: rgb(17, 6, 140);
+    --textColor: white;
+    --dropdownBg: white; /* Dark blue for dropdown background */
+}
+
+#navBar {
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(17, 6, 140);
+    color: var(--textColor);
+    width: 100%;
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+.logo {
+    margin-left: 100px;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.links li {
+   list-style: none;
+    display: flex;  
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    color: var(--textColor);
+    text-decoration: none;
+    
+}
+
+.links li::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: rgb(27, 204, 142);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.links li.active {
+    text-decoration: underline;
+    text-decoration-color: rgb(27, 204, 142);
+}
+
+.links li ul {
+    display: none; /* Hide dropdown menu by default */
+    position: absolute;
+    top: 100%; /* Position dropdown below the parent */
+    left: 0;
+    background-color: var(--dropdownBg);
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+.links li:hover ul {
+    display: block; /* Show dropdown on hover */
+}
+
+.links li ul li {
+    padding: 10px 15px;
+    white-space: nowrap;
+    color: black;
+}
+
+.links li ul li:hover {
+    color: rgb(27, 204, 142);
+    border-radius: 5px;
+}
+
+.links li ul li ul {
+    top: 0;
+    left: -120%; /* Align nested dropdown to the left */
+    display: none;
+}
+
+.links li ul li:hover ul {
+    display: block; /* Show nested dropdown on hover */
+}

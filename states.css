@@ -1,0 +1,87 @@
+#states {
+    background-color: rgb(245, 246, 255);
+    display: grid;
+    grid-template-rows: repeat(1, 200px);
+    grid-template-columns: repeat(4, 400px);
+    margin-top: 50px;
+    height: 300px;
+}
+
+#states h1 {
+    color: rgb(105, 105, 105);
+    position: relative;
+    top: 20px;
+}
+
+#states h3 {
+    font-weight: 100;
+    color: rgb(105, 105, 105);
+    position: relative;
+    top: -10px;
+    left: 240px;
+}
+
+.st-img {
+    position: relative;
+    top: 30px;
+}
+
+.happy {
+    background-color: white;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: 80px;
+}
+
+.projects {
+    background-color: white;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: 80px;
+}
+
+.hours {
+    background-color: white;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: 80px;
+}
+
+.workers {
+    background-color: white;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: 80px;
+}

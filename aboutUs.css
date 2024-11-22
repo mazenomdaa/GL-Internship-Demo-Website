@@ -1,0 +1,117 @@
+#aboutUs {
+    background-color: white;
+    width: 100%;
+}
+
+.left-about{
+    position: relative;
+    top: 300px;
+    left: 70px;
+    width: 500px;
+}
+
+.about-us {
+    background-color: rgb(242, 252, 249);
+    color: rgb(27, 204, 142);  
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+.left-about h1 {
+    color: rgb(4, 6, 120);
+    font-weight: 700;
+}
+
+.read-more {
+    background-color: rgb(27, 204, 142);
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 12px 50px 12px 24px;
+    border-radius: 5px;
+    border: none;
+}
+
+.read-more:hover {
+    background-color: rgba(27, 204, 142, 0.756);
+    margin-right: 5px;
+}
+
+.arrow {
+    width: 20px;
+    position: relative;
+    left: -40px;
+}
+
+.right-about {
+    width: 400px;
+    display: grid;
+    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(2, 400px);
+    position: relative;
+    top: -200px;
+    left: 600px;
+}
+
+.right-about h2 {
+    color: rgb(4, 6, 120);
+}
+
+.first-about {
+    padding: 50px 40px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    top: 30px;
+}
+
+.building{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(242, 252, 249);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-bi-buildings:hover {
+    fill:rgb(242, 252, 249);
+
+}
+
+.building:hover {
+    background-color: rgba(27, 204, 142, 0.756);
+}
+
+.clipboard
+
+.second-about {
+    padding: 50px 40px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    left: 30px;
+}
+
+.third-about {
+    padding: 50px 40px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    top: 60px;
+}
+
+.fourth-about {
+    padding: 50px 40px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
