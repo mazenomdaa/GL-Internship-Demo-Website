@@ -1,87 +1,88 @@
-#states {
+.states {
     background-color: rgb(245, 246, 255);
     display: grid;
     grid-template-rows: repeat(1, 200px);
     grid-template-columns: repeat(4, 400px);
     margin-top: 50px;
-    height: 300px;
+    width: 100%;
+    height: 270px;
 }
 
-#states h1 {
+.states-h1>h1 {
     color: rgb(105, 105, 105);
     position: relative;
-    top: 20px;
+    top: -45px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#states h3 {
-    font-weight: 100;
+.states-h3>h3 {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Raleway" ,sans-serif;
     color: rgb(105, 105, 105);
     position: relative;
-    top: -10px;
-    left: 240px;
+    top: -55px;
+    left: -145px;
 }
 
-.st-img {
+.states-icons {
     position: relative;
-    top: 30px;
+    top: -20px;
+    left: 125px;
+    background-color: white;
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-content: center;
 }
 
 .happy {
     background-color: white;
-    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
     width: 300px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-end;
+    height: 130px;
+    border-radius: 5px;
     position: relative;
-    top: 80px;
+    left: 80px;
+    top: 60px;
+    text-align: center;
 }
 
 .projects {
     background-color: white;
-    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
     width: 300px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-end;
+    height: 130px;
+    border-radius: 5px;
     position: relative;
-    top: 80px;
+    left: 5px;
+    top: 60px;
+    text-align: center;
 }
 
 .hours {
     background-color: white;
-    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
     width: 300px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-end;
+    height: 130px;
+    border-radius: 5px;
     position: relative;
-    top: 80px;
+    left: -70px;
+    top: 60px;
+    text-align: center;
 }
 
 .workers {
     background-color: white;
-    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
     width: 300px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-end;
+    height: 130px;
+    border-radius: 5px;
     position: relative;
-    top: 80px;
+    left: -145px;
+    top: 60px;
+    text-align: center;
 }
