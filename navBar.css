@@ -1,12 +1,5 @@
-:root {
-    --pageColor: rgb(17, 6, 140);
-    --textColor: white;
-    --dropdownBg: white; /* Dark blue for dropdown background */
-}
-
-#navBar {
+.navBar {
     text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(17, 6, 140);
     color: var(--textColor);
     width: 100%;
@@ -28,6 +21,20 @@
     font-size: 30px;
     font-weight: bolder;
     cursor: pointer;
+    font-family: "Raleway", sans-serif;
+}
+
+.logo a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.links a {
+    color: rgb(208, 206, 224);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .links ul {
@@ -36,7 +43,6 @@
     margin-right: 50px;
     justify-content: space-between;
     align-content: space-between;
-
 }
 
 .links li {
@@ -46,62 +52,75 @@
     position: relative;
     cursor: pointer;
     padding: 10px;
-    color: var(--textColor);
-    text-decoration: none;
-    
+    color: rgb(208, 206, 224);
 }
 
-.links li::before{
+.underline::before {
     content: "";
-    position: absolute;
-    height: 2px;
-    bottom: -6px;
-    left: 0;
-    background-color: rgb(27, 204, 142);
     visibility: hidden;
-    width: 0px;
-    transition: all 0.3s ease-in-out 0s;
+    width: 25px;
+    border-bottom: 2px solid rgb(27, 204, 142);
+    position: relative;
+    top: 5px;
+    left: 25px;
 }
 
-.links li.active {
-    text-decoration: underline;
-    text-decoration-color: rgb(27, 204, 142);
+.underline:hover::before {
+    visibility: visible;
 }
 
 .links li ul {
-    display: none; /* Hide dropdown menu by default */
+    display: none; 
     position: absolute;
-    top: 100%; /* Position dropdown below the parent */
+    top: 40px; 
     left: 0;
-    background-color: var(--dropdownBg);
-    padding: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    z-index: 10;
+    background-color: white;
+    padding: 10px;
+    list-style: none;
     border-radius: 5px;
-    min-width: 150px;
+    z-index: 200;
 }
 
-.links li:hover ul {
-    display: block; /* Show dropdown on hover */
-}
-
-.links li ul li {
-    padding: 10px 15px;
-    white-space: nowrap;
-    color: black;
-}
-
-.links li ul li:hover {
-    color: rgb(27, 204, 142);
-    border-radius: 5px;
+.links li:hover > ul {
+    display: block; 
 }
 
 .links li ul li ul {
-    top: 0;
-    left: -120%; /* Align nested dropdown to the left */
     display: none;
+    position: absolute;
+    top: 0;
+    left: -190px;
+    background-color: white;
+    padding: 10px;
+    list-style: none;
+    border-radius: 5px;
+    z-index: 300;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.links li ul li:hover ul {
-    display: block; /* Show nested dropdown on hover */
+.links li ul li:hover > ul {
+    display: block;
+}
+
+.links li ul li {
+    padding: 15px 15px;
+    color: rgba(0, 0, 0, 0.612); 
+    cursor: pointer;
+    white-space: nowrap; 
+}
+
+.links li ul li:hover {
+    color: rgb(27, 204, 142); 
+}
+
+.bi.bi-chevron-down {
+    width: 13px;
+    fill: white;
+    transform: translate(5px,0px);
+}
+
+.bi.bi-chevron-deepdown {
+    width: 13px;
+    fill: black;
+    transform: translate(15px,0px);
 }
