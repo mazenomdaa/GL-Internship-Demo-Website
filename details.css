@@ -3,7 +3,7 @@
     width: 100%;
 }
 
-.top h3 {
+.details .top h3 {
     color: rgb(161, 161, 161);
     position: relative;
     top: 40px;
@@ -14,7 +14,7 @@
     text-transform: uppercase;
 }
 
-.top h3::after {
+.details .top h3::after {
     content: "";
     display: inline-block;
     width: 130px;
@@ -24,7 +24,7 @@
     top: -7px;
 }
 
-.top h1 {
+.details .top h1 {
     color: rgb(4, 6, 120);
     position: relative;
     top: 20px;
