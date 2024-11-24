@@ -1,0 +1,112 @@
+.team {
+    background-color: white;
+    width: 100%;
+    transform: translateY(180px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.team .top h3 {
+    color: rgb(161, 161, 161);
+    position: relative;
+    top: 40px;
+    left: 85px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+}
+
+.team .top h3::after {
+    content: "";
+    display: inline-block;
+    width: 130px;
+    border-bottom: solid 1px rgb(27, 204, 142);
+    position: relative;
+    left: 10px;
+    top: -5px;
+}
+
+.team .top h1 {
+    color: rgb(4, 6, 120);
+    position: relative;
+    top: 20px;
+    left: 84px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+}
+
+.ceo {
+    display: inline-flex;
+    width: 400px;
+    height: 400px;
+    transform: translate(-515px, 160px);
+}
+
+.pm {
+    display: inline-flex;
+    width: 400px;
+    height: 400px;
+    transform: translate(-490px, 160px);
+}
+
+.cto {
+    display: inline-flex;
+    width: 400px;
+    height: 400px;    
+    transform: translate(-465px, 160px);
+}
+
+.info {
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: 330px;
+    left: -350px;
+}
+
+.info h3 {
+    color: rgb(4, 6, 120);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+
+.info h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    border-bottom: solid 1px rgb(161, 161, 161);
+    position: relative; 
+    left: 0px;
+    top: 10px;
+}
+
+.info h4 {
+    color: #444444b4;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+
+.sm-icons {
+    position: relative;
+    left: 200px;
+    top: -25px;
+}
+
+.sm-icons:hover {
+    fill: rgb(27, 204, 142);
+    cursor: pointer;
+}
