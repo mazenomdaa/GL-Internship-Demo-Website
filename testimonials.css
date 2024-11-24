@@ -16,6 +16,62 @@
     width: 100%;
     height: 100%;
     background: color-mix(in srgb, rgb(20, 15, 102), transparent 25%);
-    z-index: 1;
+    z-index: -1;
     pointer-events: none; 
+}
+
+.pp {
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.pp-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgb(48, 44, 134);
+    transform: translate(680px,25px);
+}
+
+.usr-name {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    transform: translate(680px,135px);
+}
+
+.job-title {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    transform: translate(700px,60px);
+
+}
+
+.bi.bi-star-fill {
+    transform: translate(690px,55px);
+}
+
+.bi.bi-quote1 {
+    color: rgb(157, 154, 181);
+    transform: translate(115px,95px);
+}
+
+.bi.bi-quote2 {
+    color: rgb(157, 154, 181);
+    transform: translate(950px,25px) rotate(180deg);
+}
+
+.test-desc {
+    color: white;
+    width: 995px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    transform: translate(255px,55px);
 }
