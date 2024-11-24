@@ -1,0 +1,21 @@
+.testimonials {
+    background-image: url(Assets/testimonials-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 101%;
+    height: 450px;
+    padding-top: 50px;
+    transform: translate(-8px,160px);
+}
+
+.testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: color-mix(in srgb, rgb(20, 15, 102), transparent 25%);
+    z-index: 1;
+    pointer-events: none; 
+}
